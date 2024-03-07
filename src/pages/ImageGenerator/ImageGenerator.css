@@ -1,0 +1,95 @@
+/* ImageGenerator.css */
+.image-generator-container {
+    padding: 5vh;
+    margin-top: 10vh;
+    border-color: rgb(208, 105, 122);
+    color: rgb(255, 252, 252);
+    background-color: black;
+    text-align: center; /* Center align content */
+  }
+  
+  .image-generator-container h2 {
+    color: rgb(43 45 56);
+    font-size: 6vw;
+    letter-spacing: -0.2px;
+    font-family: "Merriweather", serif;
+    margin-bottom: 4vh;
+  }
+  
+  .image-generator-container p {
+    max-width: 90vw;
+    margin: 0 auto; /* Center align p */
+    margin-top: 2vh;
+    margin-bottom: 10vh;
+    font-size: 3vw;
+  }
+  
+  .image-generator-container .main-content {
+    max-width: 90vw;
+    width: 90%;
+    min-height: 50vh;
+    height: auto;
+    padding: 2vh;
+    position: relative;
+    resize: none;
+    box-shadow: 0 2vh 4vh 0px rgb(109 117 141 / 20%);
+    background: rgb(255 255 255);
+    border: 0.3vw solid rgb(231 233 245);
+    border-radius: 2vw;
+    color: black;
+    margin: 0 auto; /* Center align main-content */
+  }
+  
+  .image-generator-container .main-content:focus {
+    border: 0.2vw solid rgba(43, 45, 56, 0.3);
+    outline: none;
+  }
+  
+  .image-generator-container .btn-style {
+    display: flex;
+    justify-content: center; /* Center align buttons */
+    margin-top: 2vh; /* Add margin to space out buttons */
+  }
+  
+  .image-generator-container button {
+    background: rgb(17 166 131);
+    color: rgb(255 255 255);
+    border-radius: 1.2vw;
+    padding: 2vw 4vw;
+    border: none;
+    font-size: 3vw;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin: 0 2vw; /* Add spacing between buttons */
+  }
+  
+  .image-generator-container button:focus,
+  .image-generator-container button:hover {
+    background: rgb(42, 201, 164);
+    box-shadow: 0 2vh 4vh 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .image-generator-container h2 {
+      font-size: 8vw;
+    }
+  
+    .image-generator-container p {
+      font-size: 3vw;
+    }
+  
+    .image-generator-container .main-content {
+      font-size: 3vw;
+      border-width: 0.2vw;
+      border-radius: 2vw;
+      padding: 2vw;
+    }
+  
+    .image-generator-container button {
+      padding: 1vw 2vw;
+      font-size: 2vw;
+      border-radius: 1.2vw;
+      margin: 0 2vw; /* Add spacing between buttons */
+    }
+  }
+  
