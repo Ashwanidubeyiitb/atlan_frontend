@@ -14,7 +14,7 @@ const Home = () => {
     useEffect(() => {
         const fetchModels = async () => {
             try {
-                const response = await axios.get("http://localhost:3001/models");
+                const response = await axios.get("https://my-json-server.typicode.com/Ashwanidubeyiitb/db_json/models");
                 setModels(response.data);
             } catch (error) {
                 console.error("Error fetching models:", error);
