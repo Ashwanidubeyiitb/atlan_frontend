@@ -12,7 +12,7 @@ const MovieList = () => {
     }, [type]);
 
     const getData = () => {
-        fetch(`http://localhost:3001/${type ? type : "popular"}`)
+        fetch(`https://my-json-server.typicode.com/Ashwanidubeyiitb/db_json/${type ? type : "popular"}`)
             .then(res => res.json())
             .then(data => setMovieList(data));
     };

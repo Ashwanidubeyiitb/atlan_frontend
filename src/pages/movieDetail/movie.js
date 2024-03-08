@@ -14,13 +14,13 @@ const Movie = () => {
     const getData = () => {
         let url;
         if (parseInt(id) <= 10) {
-            url = `http://localhost:3001/models/${id}`;
+            url = `https://my-json-server.typicode.com/Ashwanidubeyiitb/db_json/models/${id}`;
         } else if (parseInt(id) <= 20) {
-            url = `http://localhost:3001/popular/${id}`;
+            url = `https://my-json-server.typicode.com/Ashwanidubeyiitb/db_json/popular/${id}`;
         } else if (parseInt(id) <= 30) {
-            url = `http://localhost:3001/top_rated/${id}`;
+            url = `https://my-json-server.typicode.com/Ashwanidubeyiitb/db_json/top_rated/${id}`;
         } else if (parseInt(id) <= 40) {
-            url = `http://localhost:3001/upcoming/${id}`;
+            url = `https://my-json-server.typicode.com/Ashwanidubeyiitb/db_json/upcoming/${id}`;
         } else {
             // Handle error or redirect to a not found page
             console.error("Invalid ID");
